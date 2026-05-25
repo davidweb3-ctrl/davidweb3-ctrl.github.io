@@ -49,6 +49,7 @@ The homepage includes:
 - Pushed commit `8f9bf30`.
 - Confirmed the live homepage HTML at `https://davidweb3-ctrl.github.io/` contains the new token.
 - Moved the Stacks token before the old token in commit `f7828bf` because Talent may only inspect the first `talentapp:project_verification` meta tag.
+- Added a Stacks-specific page at `https://davidweb3-ctrl.github.io/stacks-spend-guard/` because Talent rejects reusing the root URL across multiple projects.
 
 ## Boundary
 
@@ -56,7 +57,7 @@ This repo is a free static verification / proof hub only. It does not create a n
 
 ## Next Action
 
-Use `https://davidweb3-ctrl.github.io/` as the Talent website URL and click website verification for Stacks Spend Guard.
+Use `https://davidweb3-ctrl.github.io/stacks-spend-guard/` as the Talent website URL and click website verification for Stacks Spend Guard.
 
 ## Follow-Up
 

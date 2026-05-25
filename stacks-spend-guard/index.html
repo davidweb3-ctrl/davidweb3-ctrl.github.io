@@ -8,21 +8,17 @@
       content="39f72be96d117133a61fbadd9104b67de8e09a342f721f657eb4ba6812cc04cebfd4c98254c1cf29c960192d70d0a74abb1c18aa7d6d2ab1d948f76ae9f25070"
     />
     <meta
-      name="talentapp:project_verification"
-      content="2d528094b6f05499c81ebc03b88f86b7c30b26eae0e6baf5028bb24b3ccc4b7030c1dff56f44dd9347897f54411309ea343bf309213bfd53f61a0305f93fc774"
-    />
-    <meta
       name="description"
-      content="David Xia Web3 proof hub for Base Contract QA Starter and related public builder artifacts."
+      content="Stacks Spend Guard is a small Bitcoin L2 payment-safety proof for Stacks Builder Rewards."
     />
-    <title>David Xia Web3 Proof Hub</title>
+    <title>Stacks Spend Guard</title>
     <style>
       :root {
         --bg: #f7f8fb;
         --ink: #111827;
         --muted: #5d6675;
         --line: #dce2ea;
-        --blue: #0052ff;
+        --orange: #fc6432;
         --panel: #ffffff;
       }
 
@@ -48,7 +44,7 @@
 
       .eyebrow {
         margin: 0 0 10px;
-        color: var(--blue);
+        color: var(--orange);
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
@@ -57,8 +53,8 @@
       h1 {
         margin: 0;
         max-width: 680px;
-        font-size: clamp(34px, 7vw, 56px);
-        line-height: 1.04;
+        font-size: 48px;
+        line-height: 1.08;
       }
 
       .lead {
@@ -68,54 +64,52 @@
         font-size: 18px;
       }
 
-      .links {
+      .facts {
         display: grid;
         gap: 12px;
         margin-top: 32px;
       }
 
-      a {
-        display: block;
+      .fact {
         padding: 16px;
         border: 1px solid var(--line);
         border-radius: 8px;
         background: var(--panel);
-        color: var(--ink);
-        font-weight: 700;
-        text-decoration: none;
       }
 
-      a span {
+      .fact strong {
         display: block;
-        margin-top: 3px;
+        margin-bottom: 4px;
+      }
+
+      .fact span {
         color: var(--muted);
-        font-size: 14px;
-        font-weight: 500;
       }
     </style>
   </head>
   <body>
     <main>
-      <p class="eyebrow">Web3 proof hub</p>
-      <h1>David Xia Web3 builder artifacts</h1>
+      <p class="eyebrow">Stacks Builder Rewards proof</p>
+      <h1>Stacks Spend Guard</h1>
       <p class="lead">
-        Public proof hub for contract QA, payment-safety, and builder reward
-        artifacts.
+        A small Bitcoin L2 payment-safety proof on Stacks. The project is scoped
+        as a developer proof for spend-limit and receipt-tracking contract
+        activity, not custody, DeFi, or an audited product.
       </p>
-      <div class="links">
-        <a href="https://davidweb3-ctrl.github.io/base-contract-qa-starter/">
-          Base Contract QA Starter
-          <span>Foundry proof page for Base/EVM contract QA patterns.</span>
-        </a>
-        <a href="https://davidweb3-ctrl.github.io/stacks-spend-guard/">
-          Stacks Spend Guard
-          <span>Bitcoin L2 payment-safety proof for Stacks Builder Rewards.</span>
-        </a>
-        <a href="https://github.com/davidweb3-ctrl/base-contract-qa-starter">
-          Base Contract QA Starter GitHub
-          <span>Source code, tests, checklist, and deployment notes.</span>
-        </a>
-      </div>
+      <section class="facts" aria-label="Project facts">
+        <div class="fact">
+          <strong>Scope</strong>
+          <span>Minimal Clarity contract for monthly spend limits and receipts.</span>
+        </div>
+        <div class="fact">
+          <strong>Boundary</strong>
+          <span>No custody, no yield, no production security claims.</span>
+        </div>
+        <div class="fact">
+          <strong>Status</strong>
+          <span>Talent project preflight before contract deployment.</span>
+        </div>
+      </section>
     </main>
   </body>
 </html>

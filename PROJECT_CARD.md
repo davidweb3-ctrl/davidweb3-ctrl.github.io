@@ -48,6 +48,7 @@ The homepage includes:
 - Added the Stacks Spend Guard Talent verification meta tag.
 - Pushed commit `8f9bf30`.
 - Confirmed the live homepage HTML at `https://davidweb3-ctrl.github.io/` contains the new token.
+- Moved the Stacks token before the old token in commit `TBD` because Talent may only inspect the first `talentapp:project_verification` meta tag.
 
 ## Boundary
 
